@@ -1,0 +1,399 @@
+
+@import url(../css/reset.css);
+
+@font-face {
+font-family: 'Roboto-Regular';
+src: url(../fonts/Roboto-Regular.woff2) format('woff2');
+font-style: normal;
+font-weight: 400;
+}
+
+body {
+    font-family: 'Roboto-Regular';
+    color: #212121;
+    text-decoration: none;
+    font-weight: 400;
+    letter-spacing: 0.32px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* HEADER */
+.header {
+    border-bottom: 1 px solid #ECECEC;
+    font-size: 14px;
+    font-weight: 500;
+}
+.header-logo {
+    padding: 24px 0 25px;
+    margin-right: 93px;
+}
+
+.header-container{
+    display: flex;
+    align-items: center;
+    
+}
+.header-menu {
+    display: flex;
+    gap: 50px;
+    margin-right: auto;
+    font-size: 16px;
+}
+
+.header-menu-item a {
+    color: #212121;    
+    text-decoration: none;
+} 
+
+.header-menu-item a:hover {
+    color: #13446d;
+}
+
+.header-menu-item a.active {
+    color: #2196F3;
+}
+.header-list {
+    display: flex;
+    gap: 50px
+}
+.header-list-item a {
+    color: #757575;
+    text-decoration: none;
+}
+.header-list-item a:hover {
+    color: #2196F3
+}
+/* HERO*/
+.hero {
+    min-height: 600px;
+    background-color: #2F303A;
+    color:#FFFFFF;
+    display: flex;
+    align-items: center;
+}
+
+.hero-box{
+    max-width: 696px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.capture {
+    font-size: 44px;
+    letter-spacing: 2.5px;
+    text-transform: uppercase;
+    font-weight: 900;    
+    margin-bottom: 30px;
+}
+
+.btn {
+    padding: 10px 46px;
+    background-color:#2196F3;
+    border:#2196F3;
+    border-radius: 4px;
+    color:#fff;
+    font-size: 16px;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+    letter-spacing: 0.96px;
+    font-weight: 700;
+    cursor: pointer;
+    }
+/* DETAILS */
+.details {
+    padding: 94px 0;
+}
+
+.cards {
+    display: flex;
+    flex: 0 0 25%;
+    gap:30px;
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+.card {
+font-size: 14px;
+letter-spacing: 0.03em;
+}
+
+.card-title {
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #212121;
+    margin-bottom: 10px;
+}
+
+.card-desc {
+font-size: 14px;
+color: #757575;
+}
+/* WORK */
+
+.work {
+    padding: 0 0 94px;
+}
+
+.subtitle {
+    margin-bottom: 50px;
+    font-weight: 700;
+    font-size: 36px;
+    letter-spacing: 0.03em;
+    text-align: center;
+    color: #212121;
+}
+.work-cards {
+    display: flex;
+    gap: 30px;
+    }
+
+.work-card {
+    flex: 1 1 30%;
+    height: 294px;
+}
+
+.work-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+/* TEAM */
+
+.team {
+    padding: 0 0 94px;
+    background: #f5f4fa;
+}
+.team-title {
+    margin-bottom: 50px;
+}
+.team-cards {
+display: flex;
+gap: 30px;
+}
+
+.team-card {
+    flex: 1 1 20%;
+    padding: 0 0 30px;
+}
+
+.team-card-image{
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+    box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12);
+    background: #fff;
+    margin-bottom: 30px;
+
+}
+.team-card-title {
+font-weight: 500;
+font-size: 16px;
+letter-spacing: 0.03em;
+text-align: center;
+color: #212121;
+margin: 0 0 10px;
+}
+
+.team-card-desc {
+font-size: 16px;
+letter-spacing: 0.03em;
+text-align: center;
+color: #757575;
+}
+/* FOOTER */
+
+.footer a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.footer p {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.footer {
+    padding: 60px 215px;
+    background: #2f303a;
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+    justify-content:flex-start;
+    gap: 8px;
+    margin-top: 94px;
+}
+
+/* PORTFOLIO */
+
+.burger {
+    display: none;
+}
+
+.portfolio-menu{
+    margin-top: 94px;
+    display: flex;
+    gap:8px;
+    margin-bottom: 46px;
+    justify-content: center;
+
+}
+.portfolio-btn {
+    padding: 6px 27px;
+    border:#F5F4FA ;
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: 0.03em;
+    text-align: center;
+    border-radius: 4px;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.12), 0 1px 2px 0 rgba(0, 0, 0, 0.08), 0 3px 1px 0 rgba(0, 0, 0, 0.1);
+    background:#F5F4FA;
+    cursor: pointer;
+    
+}
+   
+.portfolio-btn:hover {
+    background-color: #2196f3
+}
+.portfolio-cards{
+    display: flex;
+    gap:30px;
+    flex-wrap: wrap;
+}
+.portfolio-card{
+    flex: 1 1 30%;
+     position: relative;
+}
+
+.portfolio-img {
+    width: 100%;
+    height: 294px;
+    object-fit: cover;
+}
+
+.pcard-title{
+margin: 20px 0;
+font-weight: 700;
+font-size: 18px;
+letter-spacing: 0.06em;
+color: #212121;
+}
+
+.pcard-desc{
+font-size: 16px;
+letter-spacing: 0.03em;
+color: #757575;
+}
+
+
+.cardhover {
+    display: none;
+    position: absolute;
+    inset: 0;
+    vertical-align: middle;
+    height: 294px;
+    font-size: 18px;
+    line-height: 156%;
+    letter-spacing: 0.03em;
+    color: #fff;
+    padding: 63px 24px;
+}
+
+.portfolio-card:hover .cardhover{
+    display: block;
+    background: rgba(33, 150, 243, 0.9);
+}
+
+@media (max-width:990px) {
+
+.container{
+    max-width: 960px;
+}
+.header-logo {
+    margin-right: 50px;
+}
+
+.footer-address p {
+    text-align: center;
+}
+}
+
+@media (max-width:860px) {
+
+.container {
+    max-width: 830px;
+}
+.header-menu, .header-list {
+    display: none;
+}
+.header-logo {
+    margin-right: auto;
+}
+
+.portfolio-card {
+    flex: 1 1 45%;
+}
+
+.burger {
+    display: block;
+     width: 24px;
+    height: 16px;
+    position: relative;
+    cursor: pointer;
+}
+
+.burger span::after,
+.burger span::before,
+.burger span {
+    content:" ";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;       
+    height: 3px;
+    background: #000;
+}
+   
+.burger span::after {
+    top: 14px;
+    bottom: 100%;
+}
+
+.burger span::before {
+    top: 7px;
+}   
+}
+
+@media (max-width:626px) {
+
+.container {
+    max-width: 600 px;
+}
+.portfolio-menu {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin-top: 60px;  
+    margin-bottom: 40px;     
+}
+
+.footer {
+    padding: 60px 0;
+    align-items: center;
+    justify-content: center;
+    margin-top: 58px;
+}
+
+}
+
+
+@media (max-width:576px) {
+.container {
+    max-width: 550 px;
+}
+
+.portfolio-card {
+     flex: 1 1 90%;
+ }
+}
